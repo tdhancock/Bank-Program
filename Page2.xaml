@@ -1,0 +1,22 @@
+﻿<Page x:Class="Lab4.Page2"
+      Background="White"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lab4"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+
+    <Grid>
+        <Label Content="Accounts: " HorizontalAlignment="Left" Margin="22,27,0,0" VerticalAlignment="Top" Width="177"/>
+        <TextBox Name="accountList" HorizontalAlignment="Left" Margin="22,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="517" Height="166" IsReadOnly="True"/>
+        <TextBox Name="selection" HorizontalAlignment="Left" Margin="563,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="217" Height="19"/>
+        <Label Content="Select an account for more info:" HorizontalAlignment="Left" Margin="563,87,0,0" VerticalAlignment="Top" Width="217"/>
+        <Button Name="selectButton" Content="select" HorizontalAlignment="Left" Margin="563,178,0,0" VerticalAlignment="Top" Width="81" Click="selectAccount"/>
+        <TextBox Name="moreInfo" HorizontalAlignment="Left" Margin="22,256,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="517" Height="100" IsReadOnly="True"/>
+        <TextBox Name="cantFind" HorizontalAlignment="Left" Margin="563,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="204" Visibility="Hidden" Background="Red"/>
+
+    </Grid>
+</Page>

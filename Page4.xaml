@@ -1,0 +1,28 @@
+﻿<Page x:Class="Lab4.Page4"
+      Background="White"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lab4"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page4">
+
+    <Grid>
+        <Label Content="Enter the name of the Account you would like to manage:" HorizontalAlignment="Left" Margin="20,22,0,0" VerticalAlignment="Top" Width="325"/>
+        <TextBox Name="userSelection" HorizontalAlignment="Left" Margin="345,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" Height="26" TextAlignment="Center"/>
+        <TextBox Name="displaySelection" HorizontalAlignment="Left" Margin="32,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="297" IsReadOnly="True" Visibility="Hidden"/>
+        <Button Name="userButton" Content="Select" HorizontalAlignment="Left" Margin="594,25,0,0" VerticalAlignment="Top" Width="85" Click="manageUser" />
+        <Button Name="viewInfo" Content="View Account Information" HorizontalAlignment="Left" Margin="71,110,0,0" VerticalAlignment="Top" Width="148" Click="viewUserInfo" Visibility="Hidden"/>
+        <Button Name="deposit" Content="Deposit Money" HorizontalAlignment="Left" Margin="252,110,0,0" VerticalAlignment="Top" Width="148" Click="depositMoney" Visibility="Hidden"/>
+        <Button Name="withdraw" Content="Withdraw Money" HorizontalAlignment="Left" Margin="424,110,0,0" VerticalAlignment="Top" Width="148" Click="withdrawMoney" Visibility="Hidden"/>
+        <Button Name="setState" Content="Set Account State" HorizontalAlignment="Left" Margin="594,110,0,0" VerticalAlignment="Top" Width="148" Click="accState" Visibility="Hidden"/>
+        <TextBox Name="userInput" HorizontalAlignment="Left" Margin="71,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" Visibility="Hidden"/>
+        <TextBox Name="desc" HorizontalAlignment="Left" Margin="71,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" IsReadOnly="True" Visibility="Hidden"/>
+        <Button Name="confirmation" Content="Confirm Selection" HorizontalAlignment="Left" Margin="424,175,0,0" VerticalAlignment="Top" Height="41" Width="148" Click="confirmSelection" Visibility="Hidden"/>
+        <TextBox Name="display" HorizontalAlignment="Left" Margin="71,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="671" Height="122" IsReadOnly="True" Visibility="Hidden"/>
+        <TextBox Name="incorrect" HorizontalAlignment="Left" Margin="71,230,0,0" TextWrapping="Wrap" Text="INCORRECT INPUT, TRY AGAIN" VerticalAlignment="Top" Width="329" Background="Red" Visibility="Hidden"/>
+
+    </Grid>
+</Page>
